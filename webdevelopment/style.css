@@ -102,7 +102,7 @@ h1 {
    }
 
 /*about.html resume link */
-.resume-link {
+.resume-link a {
   display: inline-block;
   padding:12px;
   margin:15px;
