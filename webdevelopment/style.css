@@ -113,7 +113,7 @@ h1 {
 }
 
 /*first unordered list styling */
-li {
+ul {
   list-style: circle;
   font-size:1em;
   color: #4f5564;
