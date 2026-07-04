@@ -115,10 +115,13 @@ h1 {
 /*first unordered list styling */
 ul {
   list-style: circle;
-  font-size:1em;
-  color: #4f5564;
   margin:20px;
   padding-left:30px;
+}
+
+li {
+  font-size:1em;
+  color: #4f5564;
 }
 
 li:hover {
