@@ -111,3 +111,16 @@ h1 {
   border-radius:8px;
   color: #4F5564;
 }
+
+/*first unordered list styling */
+li {
+  list-style: circle;
+  font-size:1em;
+  color: #4f5564;
+  margin:20px;
+  padding-left:30px;
+}
+
+li:hover {
+  color: #c6ccdd
+}
