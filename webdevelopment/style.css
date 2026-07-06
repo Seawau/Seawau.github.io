@@ -31,6 +31,10 @@ h1 {
     color: #4F5564;
  }
 
+ h2 {
+  color: #4F5564;
+ }
+
  footer {
    background-color: #4f5564;
    padding: 15px;
@@ -45,6 +49,8 @@ h1 {
  footer p {
    color: #FFFBF5;
  }
+
+/*Hero Section Page Styling!!! */
 
  /* Hero Section Banner Image Styling */
  .hero {
@@ -101,6 +107,8 @@ h1 {
       max-width: 600px;
    }
 
+/*About Page Styling!!!*/
+
 /*about.html resume link */
 .resume-link {
   display: inline-block;
@@ -110,6 +118,12 @@ h1 {
   background-color:#c6ccdd;
   border-radius:8px;
   color: #4F5564;
+}
+
+.resume-link:hover {
+  background-color: #4F5564;
+  color: #FFFBF5;
+  text-decoration:none;
 }
 
 /*first unordered list styling */
@@ -126,4 +140,42 @@ li {
 
 li:hover {
   color: #c6ccdd;
+}
+
+main {
+  padding: 20px;
+}
+
+/*Reflection Page Styling!!!*/
+
+/*Styling for Reflection box-models*/
+.reflection-box {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 25px;
+  border: 2px solid #4f5564;
+  background-color: #fffbf5;
+}
+
+/*Styling the first letter of the first paragaph on Reflection page*/
+.first-paragraph::first-letter {
+  font-size: 3rem;
+  float: left;
+  line-height: 1;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #4F5564;
+}
+
+/*indents the first line of every paragraph*/
+.reflection-box p:not(.first-paragraph) {
+  text-indent: 2em;
+}
+
+.reflection-box p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
 }
