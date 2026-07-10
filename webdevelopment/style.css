@@ -179,3 +179,41 @@ main {
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }
+
+/*Styling for about.html GracieH.png image and resume video*/
+video {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  width: 650px;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.about-section img {
+  float: left;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+video,
+.about-section img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
