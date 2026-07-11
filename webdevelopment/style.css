@@ -227,7 +227,6 @@ video,
   body.about-page {
     color: black;
     background-color: white;
-    font-family: 'Times New Roman', serif !important;
   }
 
   body.about-page * {
@@ -258,5 +257,16 @@ video,
   li,
   footer {
     display: block;
+  }
+
+  body.about-page,
+  body.about-page h1,
+  body.about-page h2,
+  body.about-page h3,
+  body.about-page p,
+  body.about-page ul,
+  body.about-page li,
+  body.about-page footer {
+    font-family: 'Time New Roman', serif !important;
   }
 }
