@@ -217,3 +217,46 @@ video,
   border-radius: 10px;
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
+
+/*Styling for creating a printable version of about.html*/
+@media print {
+  @page {
+    margin: 1in;
+  }
+
+  body.about-page {
+    color: black;
+    background-color: white;
+    font-family: 'Times New Roman', serif;
+  }
+
+  body.about-page * {
+    color: black !important;
+    background-color: white !important;
+  }
+
+  /*Hide items not wanted in the print version*/
+  body.about-page header,
+  body.about-page nav,
+  body.about-page img,
+  body.about-page video,
+  body.about-page .resume-link {
+    display: none;
+  }
+
+  /*Make all text black*/
+  * {
+    color: black !important;
+    background: white !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li,
+  footer {
+    display: block;
+  }
+}
