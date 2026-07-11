@@ -227,7 +227,7 @@ video,
   body.about-page {
     color: black;
     background-color: white;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif !important;
   }
 
   body.about-page * {
