@@ -4,29 +4,29 @@
     <!-- opening tag of the html element and sets the language to english -->
     <!--
   Name: Gracie Hulett
-  Date: 7/12/2026
+  Date: July 12, 2026
   Course: ISLT 4355
-  Description: This is the about page for my student portfolio, where I provide more information about myself and my academic background.
+  Description: Contact page for Gracie Hulett's student portfolio, including a contact form.
 -->
     <head>
         <meta charset="utf-8">
         <!-- sets the character encoding for the document -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- sets the viewport for the document (mobile friendly) so the content is scaled properly on different devices -->
-        <title>About Me</title>
+        <title>Contact</title>
          <!-- sets the title for the document -->
         <link rel="stylesheet" href="style.css">
          <!-- links to an external stylesheet called style.css -->
-              <link rel="stylesheet" href="nav.css">
-              <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="nav.css">
+           <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../webcontent/favicon.ico">
     </head>
      <!-- the head contains meta information about the document, such as the title and links to stylesheets -->
-    
-    <body class="about-page">
+    <body>
         <header>
             <h1>Student Portfolio</h1>
             <img src="logo.png" alt="Your Site Logo">
-           <nav>
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
@@ -45,28 +45,40 @@
             <!--navigation links listed-->
         </header>
         <!-- the header contains introductory content, navigational links, and the logo --> 
-         <main>
-            <h1>About Me</h1>
-            <video controls width="400">
-                <source src="../webcontent/Resumevideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <h2>My Experience With Psychology</h2>
-            <div class="about-section">
-            <img src="../webcontent/GracieH.png" alt="Image of Gracie Hulett">
-            <p>Outside of school, I tend to be the “psychologist” of my friend group. I spend quite a bit of time in introspection, so perhaps they think I’m insightful, or maybe I’m just a good listener. The more I work through mental and emotional processes with people, the more enlightened I feel.  Yet, I also feel I know nothing at all. Although I’m not an expert in therapy, I believe I’m on the right track. Doing research is also essential to applying practice in the field. During my schooling, I have developed researching  and writing skills, analyzed statistics using SPSS, and condensed scholarly articles. Reading the experiences of others with mental health struggles has also clued me into perspectives of the world that I would not have gained on my own. In my free time writing creatively, it has also taken a fair amount of time to understand the psychology of intentions and reactions of characters, as well as the inner workings of the world and society.</p>
-            </div>
-            <h3>Education Overview</h3>
-            <ul>
-                <li>Undergraduate in BA Psychological Sciences</li>
-            <li>Estimated Graduate Date: May 2027</li>
-            <li>Graduated High School from Rock Bridge High School</li>
-            <li>CITI Training Certifications</li>
-         </ul>
-         <a href="../webcontent/Hulettresume.pdf" class="resume-link">Download My Resume</a>
-        </main>
-        <!-- the main element contains the main content of the page -->
-         <footer>
+         <h1>Contact Me</h1>
+
+         <!-- Contact form for users to reach out -->
+         <form action="mailto:ghulett@example.com?Subject=Form%20Submission" method="post" enctype="text/plain">
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="">Select a title</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Dr.">Dr.</option>
+            </select>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for ="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="topic">Reason for Contact:</label>
+            <select id="topic" name="topic" required>
+                <option value="">Select a reason</option>
+                <option value="Question">Question</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Collaboration">Collaboration</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+         </form>
+
+        <footer>
             <p>July 12, 2026 - Gracie Hulett</p>
             <p>
               <img src="../webcontent/icons8phone.png" alt="Phone Icon">

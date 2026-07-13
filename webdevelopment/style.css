@@ -283,7 +283,6 @@ footer {
   background-repeat: no-repeat;
   padding: 20px;
   text-align: center;
-  background-color: rbga(0, 0, 0, 0.12);
 
   /*style coding moved from the original location (top of style.css) to combine into one */
   background-color: #4f5564;
@@ -329,4 +328,50 @@ footer img {
 
 .icon-credit {
   font-size: 0.8em;
+}
+
+/*Styling for Contact Form .html page*/
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #c6ccdd;
+  border: 2px solid #4f5564;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4F5564;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4f5564;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #4f5564;
+  color: #FFFBF5;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+  background-color: #FFFBF5;
+  color: #4f5564;
 }
