@@ -148,40 +148,6 @@ main {
   padding: 20px;
 }
 
-/*Reflection Page Styling!!!*/
-
-/*Styling for Reflection box-models*/
-.reflection-box {
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  width: 80%;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 25px;
-  border: 2px solid #4f5564;
-  background-color: #fffbf5;
-}
-
-/*Styling the first letter of the first paragaph on Reflection page*/
-.first-paragraph::first-letter {
-  font-size: 3rem;
-  float: left;
-  line-height: 1;
-  margin-right: 10px;
-  font-weight: bold;
-  color: #4F5564;
-}
-
-/*indents the first line of every paragraph*/
-.reflection-box p:not(.first-paragraph) {
-  text-indent: 2em;
-}
-
-.reflection-box p {
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
-}
-
 /*Styling for about.html GracieH.png image and resume video*/
 video {
   display: block;
@@ -199,6 +165,7 @@ video {
   height: auto;
 }
 
+/*flex-box styling for about.html GracieH.png image and resume video
 .about-section {
   display: flex;
   align-items: flex-start;
@@ -213,6 +180,7 @@ video {
   border-radius: 10px;
   flex-shrink: 0;
 }
+  */
 
 video,
 .about-section img {
@@ -271,6 +239,71 @@ video,
   body.about-page footer {
     font-family: 'Time New Roman', serif !important;
   }
+}
+
+/*grid layout styling */
+main {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.about-section img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Responsive styling for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section img {
+    margin: 0 auto;
+  }
+}
+
+/*Reflection Page Styling!!!*/
+
+/*Styling for Reflection box-models*/
+.reflection-box {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 25px;
+  border: 2px solid #4f5564;
+  background-color: #fffbf5;
+}
+
+/*Styling the first letter of the first paragaph on Reflection page*/
+.first-paragraph::first-letter {
+  font-size: 3rem;
+  float: left;
+  line-height: 1;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #4F5564;
+}
+
+/*indents the first line of every paragraph*/
+.reflection-box p:not(.first-paragraph) {
+  text-indent: 2em;
+}
+
+.reflection-box p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
 }
 
 /*Styling for the phone and email icons inside footer*/
