@@ -272,6 +272,39 @@ main {
   }
 }
 
+/*Projects Page Styling!!!*/
+.project-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.poster-link {
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+figure img {
+  max-width: 250px;
+  height: auto;
+}
+
+@media screen and (max-width:600px) {
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*Reflection Page Styling!!!*/
 
 /*Styling for Reflection box-models*/
