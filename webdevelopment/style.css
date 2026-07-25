@@ -87,6 +87,22 @@ h1 {
      color: #fffbf5;
  }
 
+ /*Custom font from Google Fonts applied to site (index.html) */
+ blockquote {
+  font-family: 'Montserrat', sans-serif;
+ }
+
+ /*Custom styles for h1 and h3 elements on index.html */
+ h1 {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,.2);
+ }
+
+ h3 {
+  text-decoration: underline;
+  letter-spacing: 1px;
+ }
+
  /*About Me Link Styling */
  .hero a {
    color: #dedcff;
