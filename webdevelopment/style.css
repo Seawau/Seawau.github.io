@@ -109,6 +109,56 @@ h1 {
       max-width: 600px;
    }
 
+   /*Index Page Table Styling */
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #4F5564;
+    margin: 20px;
+   }
+
+   caption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+   }
+
+   th,
+   td {
+    border: 1px solid #4f5564;
+    padding: 10px;
+    text-align: left;
+   }
+
+   thead {
+    background-color: #4f5564;
+    color: white;
+   }
+
+   /*First and third rows same color */
+   tbody tr:nth-child(1),
+   tbody tr:nth-child(3) {
+    background-color: #c6ccdd;
+   }
+
+   /*Alternate row colors */
+   tbody tr:nth-child(even) {
+    background-color: white;
+   }
+
+   /*Media query for table on smaller screens */
+   @media screen and (max-width:768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+
+    th,
+    td {
+      font-size: 0,9rem;
+    }
+   }
+
 /*About Page Styling!!!*/
 
 /*about.html resume link */
