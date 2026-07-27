@@ -359,10 +359,6 @@ main {
   align-items: start;
 }
 
-.poster-figure {
-  margin: 0;
-}
-
 figure img {
   max-width: 250px;
   height: auto;
