@@ -127,10 +127,11 @@ h1 {
 
    /*Index Page Table Styling */
    table {
-    width: 100%;
+    width: 95%;
+    table-layout: fixed;
     border-collapse: collapse;
     border: 2px solid #4F5564;
-    margin: 20px;
+    margin: 20px auto;
    }
 
    caption {
@@ -165,7 +166,6 @@ h1 {
    /*Media query for table on smaller screens */
    @media screen and (max-width:768px) {
     table {
-      display: block;
       overflow-x: auto;
     }
 
@@ -316,15 +316,21 @@ main {
 
 .about-section {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  align-items: start;
+  grid-template-columns: 400px 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-section img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 10px;
+}
+
+.about-section p {
+  max-width: 900px;
 }
 
 /* Responsive styling for smaller screens (mobile) */
@@ -353,11 +359,8 @@ main {
   align-items: start;
 }
 
-.poster-link {
-  display: inline-block;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.poster-figure {
+  margin: 0;
 }
 
 figure img {

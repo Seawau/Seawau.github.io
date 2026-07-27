@@ -24,9 +24,13 @@
      <!-- the head contains meta information about the document, such as the title and links to stylesheets -->
     <body>
         <header>
-            <h1>Student Portfolio</h1>
-            <img src="logo.png" alt="Your Site Logo">
-            <span class="hamburger">☰</span>
+            <div class="logo-title">
+                <img src="logo.png" alt="Your Site Logo">
+                <h1>Student Portfolio</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle"/>
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -60,14 +64,27 @@
 
          <article>
          <h3>My CITI Training Completion Certificates</h3>
-         <ul>
-            <li>
-                <a href="../webcontent/citiCompletionCertificate.pdf" target="_blank">CITI Training Certificate: Social and Behavioral Research Best Practices for Clinical Research</a>
-            </li>
-            <li>
-                <a href="../webcontent/citiCompletionCertificate(2).pdf" target="_blank">CITI Training Certificate: Social Behavioral HSR</a>
-            </li>
-         </ul>
+         
+         <figure>
+            <object
+         data="../webcontent/citiCompletionCertificate.pdf"
+         type="application/pdf"
+         width="100%"
+         height="390">
+         <p>CITI Training Certificate: Social and Behavioral Research Best Practices for Clinical Research.</p>
+        </object>
+    </figure>
+
+    <figure>
+         <object
+         data="../webcontent/citiCompletionCertificate (2).pdf"
+         type="application/pdf"
+         width="100%"
+         height="390">
+         <p>CITI Training Certificate: Social Behavioral HSR</p>
+        </object>
+        </figure>
+
          </article>
 
          </div>
@@ -80,12 +97,17 @@
           <div class="project-content">
 
          <article>
-         <p>During my time in the HIT Lab, my mentor and the PI assisted me in creating a poster for Show Me Research Week of April 2026. I designed my poster based on their examples, and used their guidance to comprehensively display my findings. Using data from a previous study of theirs, I looked at whether there were associations between prenatal cannabis use and depression. With a total sample of 210, 185 participants used cannabis during pregnancy, while 25 did not. I was surprised to find that depression symptoms were similar among those who did and did not use cannabis during pregnancy. One of the most important things aside from the data was also ensuring the poster was engaging and easy to read. At Show Me Research Week, I was required to give my spiel to intrigued attendees, as well as judges who scored my work.</p>
+         <p>During my time in the HIT Lab, my mentor and the lab team assisted me in creating a poster for Show Me Research Week of April 2026. I designed my poster based on their examples, and used their guidance to comprehensively display my findings. Using data from a previous study of theirs, I looked at whether there were associations between prenatal cannabis use and depression. With a total sample of 210, 185 participants used cannabis during pregnancy, while 25 did not. I was surprised to find that depression symptoms were similar among those who did and did not use cannabis during pregnancy. One of the most important things aside from the data was also ensuring the poster was engaging and easy to read. At Show Me Research Week, I was required to give my spiel to intrigued attendees, as well as judges who scored my work.</p>
          <p>If I continued a later study in this direction, I would like to conduct a longitudinal study that asks more questions about depression, and looks into the trimesters. The presentation during Show Me Week was also the most difficult part, but worth it. I’m leaning towards clinical work over research, but I find both vital, and presentation skills even more so. Following my path into clinical psychology and counseling, articulating my thoughts and communication skills will be particularly useful. </p>
          </article>
 
-         <figure>
-         <a href="../webcontent/MU2026PosterHulettMoskal.pdf" class="poster-link">View My Show Me Research Week Poster</a>
+          <figure class="poster-figure">
+            <object
+            data="../webcontent/MU 2026 Poster Hulett Moskal.pdf"
+            type="application/pdf"
+            width="100%"
+            height="400">
+            </object>
          <figcaption>Poster presented during Show Me Research Week 2026</figcaption>
          </figure>
 

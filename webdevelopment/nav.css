@@ -8,6 +8,12 @@ header {
     color:#fffbf5;
 }
 
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 header h1 {
     color: #fffbf5;
     font-size: 2rem;
@@ -30,8 +36,18 @@ nav ul {
     cursor: pointer;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 /*Mobile friendly layout */
 @media (max-width: 768px) {
+    .logo-title {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
@@ -46,12 +62,12 @@ nav ul {
 
     nav ul {
         flex-direction: column;
-        gap: 5px;
+        gap: 15px;
         text-align: center;
     }
 
     header img {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     /*hide the navigation links on mobile */
@@ -60,8 +76,16 @@ nav ul {
     }
 
     /* Show the hamburger menu icon and dropdown on mobile */
+    #menu-toggle:checked ~ nav {
+        display: block;
+    }
+
     .hamburger {
         display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fffbf5;
+        margin-bottom: 15px;
     }
 
     .dropdown-content {
@@ -73,7 +97,7 @@ nav a {
     color: #fffbf5;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 /*pseudo class styling*/
